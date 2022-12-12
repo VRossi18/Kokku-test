@@ -184,7 +184,7 @@ namespace AutoBattle
 
                 case CharacterClass.Cleric:
                     skill = new CharacterSkills { Name = CharacterSkillName.Heal, damage = 0, damageMultiplier = 0 };
-                    specialSkill = new CharacterSkills { Name = CharacterSkillName.Poison, damage = Target.Health * .1f, damageMultiplier = 0 };
+                    //specialSkill = new CharacterSkills { Name = CharacterSkillName.Poison, damage = Target.Health * .1f, damageMultiplier = 0 };
                     break;
 
                 case CharacterClass.Archer:
@@ -194,7 +194,7 @@ namespace AutoBattle
                 case CharacterClass.Warrior:
                     Health *= 2;
                     DamageMultiplier = 1.5f;
-                    skill = new CharacterSkills { Name = CharacterSkillName.Bleed, damage = Target.Health * .2f, damageMultiplier = 1.2f };
+                    //skill = new CharacterSkills { Name = CharacterSkillName.Bleed, damage = Target.Health * .2f, damageMultiplier = 1.2f };
                     break;
             }
         }
